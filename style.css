@@ -1,0 +1,125 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    font-family: "Outfit";
+    background-color: hsl(217, 54%, 11%);
+}
+.container{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+   padding: 20px 20px 5px 20px;
+   border: 2px solid;
+   margin: 20px;
+   border-radius: 20px;
+   background-color: hsl(216, 50%, 16%);
+   color: hsl(0, 0%, 100%);
+   border: none;
+}
+.main-pic{
+    border-radius: 10px;
+    width: 400px;
+}
+h1{
+    margin-bottom: 0;
+    font-weight: 500;
+}
+h1:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+p{
+    font-weight: 300;
+    font-size: 1.45rem;
+}
+.side-to-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.side-to-side p{
+   margin: 0;
+}
+.clock{
+    width: 25px;
+    height: 25px;
+    padding-top: 2px;
+}
+.ethereum{
+    height: 20px;
+    width: 10px;
+}
+.clock-items{
+    display: flex;
+    gap: 10px;
+    font-weight: 400;
+}
+.line{
+    margin-top: 20px;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+.avatar-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.avatar-items img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50% 50%; 
+}
+.name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.equilibrim, .clock-items, .creation{
+    color: hsla(215, 52%, 70%, 0.927);
+}
+.eth-items{
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+.attribution a{
+    color: hsl(228, 45%, 44%); 
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.image-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+.image-container:hover::before {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media(min-width: 1040px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
